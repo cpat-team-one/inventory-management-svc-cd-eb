@@ -1,0 +1,11 @@
+global:
+  ingressSubdomain: test-eb.us-south.containers.appdomain.cloud
+  tlsSecretName: test-eb
+
+inventory-management-svc-cd-eb:
+  replicaCount: 3
+  
+  ingress:
+    enabled: true
+    tlsSecretName: test-eb
+
